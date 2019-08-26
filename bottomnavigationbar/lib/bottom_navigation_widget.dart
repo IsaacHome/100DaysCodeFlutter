@@ -27,6 +27,8 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Drawer"),),
+      drawer: Drawer(),
       body: list[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
            items: [
